@@ -1,0 +1,18 @@
+{
+  "name": "version-me",
+  "version": "0.0.1",
+  "author": "steve_py96",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steve-py96/version-me"
+  },
+  "keywords": [
+    "tracking",
+    "dom"
+  ],
+  "scripts": {
+    "test": "node ."
+  }
+}
