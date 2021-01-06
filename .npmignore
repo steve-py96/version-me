@@ -1,0 +1,5 @@
+!dist/
+.editorconfig
+.gitignore
+.nvmrc
+.prettierrc
