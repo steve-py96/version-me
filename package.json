@@ -9,10 +9,9 @@
     "url": "https://github.com/steve-py96/version-me"
   },
   "keywords": [
-    "tracking",
-    "dom"
-  ],
-  "scripts": {
-    "test": "node ."
-  }
+    "version",
+    "package.json",
+    "versioning",
+    "cheap!"
+  ]
 }
