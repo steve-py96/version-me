@@ -1,5 +1,8 @@
 import type { VersionMe, Params } from './types'
-import { writeFile } from 'fs/promises'
+import { writeFile as write } from 'fs'
+import { promisify } from 'util'
+
+const writeFile = promisify(write)
 
 export const versionMe: VersionMe = ({ file, customContent } = {}) => {
   const { npm_package_version: version, VERSION } = process.env
