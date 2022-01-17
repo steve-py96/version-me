@@ -4,7 +4,7 @@ import { promisify } from 'util'
 
 const writeFile = promisify(write)
 
-export const versionMe: VersionMe = ({ file, customContent } = {}) => {
+export const versionMe: VersionMe = ({ file, customContent, exitAfterCreating } = {}) => {
   const { npm_package_version: version, VERSION } = process.env
 
   if (!VERSION && !version)
@@ -23,10 +23,12 @@ export const versionMe: VersionMe = ({ file, customContent } = {}) => {
   )
     .then(() => {
       console.log(`[version exported]`)
-      process.exit(0)
+
+      if (exitAfterCreating) process.exit(0)
     })
     .catch((err) => {
       console.error(err)
-      process.exit(1)
+
+      if (exitAfterCreating) process.exit(1)
     })
 }

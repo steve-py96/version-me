@@ -1,6 +1,6 @@
 {
   "name": "version-me",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "steve_py96",
   "license": "UNLICENSED",
   "main": "dist/index.js",

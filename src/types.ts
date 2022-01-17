@@ -16,6 +16,11 @@ export interface Options {
    * ; default content: {version: ...} / <version>...</version>
    */
   customContent?: (params: Params) => string
+  /**
+   * exit after creating the version file?
+   * ; default: false
+   */
+  exitAfterCreating?: boolean
 }
 
 export type VersionMe = (opts: Options) => void
